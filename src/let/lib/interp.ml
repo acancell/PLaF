@@ -54,8 +54,7 @@ let rec eval_expr : expr -> exp_val ea_result =
     string_of_env >>= fun str ->
     print_endline str; 
     error "Debug called"
-  | _ -> failwith "Not implemented yet!"
-
+  | _ -> failwith "Not implemented yet!"  
 (** [eval_prog e] evaluates program [e] *)
 let eval_prog (AProg(_,e)) =
   eval_expr e
